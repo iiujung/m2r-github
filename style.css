@@ -49,15 +49,23 @@ body {
 .header2 {
   font-style: normal;
   font-weight: bold;
-  font-size: 6rem;
-  line-height: 117.7%;
+  font-size: 5rem;
+  line-height: 6.5rem;
 }
 
 .subtitle {
   font-style: normal;
   font-weight: bold;
-  font-size: 4rem;
-  line-height: 5rem;
+  font-size: 2.5rem;
+  line-height: 3.5rem;
+  letter-spacing: 0.055em;
+}
+
+.subtitle2 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 2.2rem;
   letter-spacing: 0.055em;
 }
 
@@ -295,3 +303,64 @@ body {
   background: #fff;
 }
 /* end of section-about------------------------------------------------------ */
+
+/* section-main-service-------------------------------------------- */
+#section-main-service .area-title {
+  text-align: center;
+}
+#section-main-service .mainservice1-3 {
+  position: relative;
+}
+#section-main-service .info-box {
+  margin-bottom: 50px;
+  margin-top: 50px;
+  min-height: 15rem;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.247);
+}
+#section-main-service .info-title {
+  text-align: right;
+  color: #33bcf2;
+}
+#section-main-service .blue-square {
+  position: absolute;
+  top: 6%;
+  left: 10%;
+  background-color: #33bcf2;
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px 2px rgba(38, 74, 128, 0.247);
+  width: 6rem;
+  height: 6rem;
+}
+
+#section-main-service .info-body {
+  color: #808080;
+}
+
+#section-main-service .info-icon {
+  width: 5.5rem;
+  height: 5.5rem;
+}
+
+#section-main-service .info-icon img {
+  width: 100%;
+}
+
+.main-service-bg {
+  background-image: url("./img/m2r_bg-srvice-mid.png");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+.main-service-bg::before {
+  content: "";
+  background-image: url(./img/m2r_bg-service-top.png);
+  position: absolute;
+  top: 0;
+}
+/* end of section-main-service-------------------------------------------- */

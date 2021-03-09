@@ -24,14 +24,17 @@
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,400&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="assets/css/vendor/font-awesome.min.css" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-custom">
+      <nav
+        class="navbar navbar-expand-lg navbar-light bg-light navbar-custom fixed-top"
+      >
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            <div class="img-box"><img src="./img/logo.png" alt="" /></div>
+          <a class="navbar-brand" href="#section-kv">
+            <div class="img-box"><img src="./img/logo-2.png" alt="" /></div>
           </a>
           <button
             class="navbar-toggler"
@@ -82,9 +85,9 @@
     <section id="section-kv">
       <div class="container-fluid kv-bg px-5">
         <div class="row mb-4">
-          <div class="kv-info col-sm-12 col-md-6 pt-5">
-            <div class="header1 mt-5 strokeme">Straits Cloud</div>
-            <div class="header2 mb-5">您專屬的一站式<br />雲端管理系統！</div>
+          <div class="kv-info col-sm-12 col-md-6">
+            <div class="heading1 mt-5 strokeme">Straits Cloud</div>
+            <div class="heading2 mb-5">您專屬的一站式<br />雲端管理系統！</div>
             <div class="body1 my-2">
               提供客戶快速，全面的雲端服務，給您最完整的雲端代管服務，無論是搬遷、代管、AWS雲端應用，都放心交給海峽雲您只需專注企業核心。
             </div>
@@ -108,7 +111,7 @@
         <div class="row d-flex justify-content-center">
           <div class="info-box col-sm-12 col-md-8">
             <div class="subtitle mb-4 py-3 pl-5">
-              M2r是您數位轉型、<br />
+              STRAITS CLOUD 是您數位轉型、<br />
               創新商業模式的好夥伴!
             </div>
             <div class="body1">
@@ -121,7 +124,7 @@
             <div class="white-box-l"></div>
             <div class="white-box-r"></div>
             <div class="about-img">
-              <img src="./img/about-hand.jpg" alt="" />
+              <img src="./img/about-hand.png" alt="" />
             </div>
           </div>
         </div>
@@ -192,13 +195,253 @@
           </div>
         </div>
       </div>
+      <div class="container">
+        <div class="row">
+          <div class="signal body2 py-2">
+            新加坡最具信賴的IT服務和解決方案領導者
+          </div>
+        </div>
+      </div>
     </section>
     <!-- end of section-main-service" -->
 
-    <section id="section-map"></section>
-    <section id="section-cooperation"></section>
-    <section id="section-contact"></section>
-    <footer></footer>
+    <!-- section-service-1, section-service-2" -->
+    <section id="section-service-1" class="service-1-bg">
+      <div class="container-fluid">
+        <div class="row pt-5">
+          <div class="service-heading heading1 col-sm-12 col-md-5">
+            我們提供多樣化的<br /><span>解決方案</span
+            >專為<br />各個行業而打造！
+          </div>
+          <div class="highlight"></div>
+        </div>
+      </div>
+      <div class="container-fluid">
+        <div class="box-family-frame row px-4">
+          <div class="d-flex flex-row">
+            <div class="col-sm-6 col-md-6"></div>
+            <div class="col-sm-6 col-md-3">
+              <div class="box-2x2">
+                <div class="box-icon-bg">
+                  <div class="box-icon">
+                    <img src="./img/box-2x2-1.png" alt="" />
+                  </div>
+                </div>
+                <div class="box-title subtitle2">DevOps</div>
+                <div class="box-article body2">
+                  透過持續集成與持續交付的方法，用來改善並加速開發團隊以及維運團隊的合作，降低問題發生的可能性。
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-3">
+              <div class="box-2x2">
+                <div class="box-icon-bg">
+                  <div class="box-icon">
+                    <img src="./img/box-2x2-2.png" alt="" />
+                  </div>
+                </div>
+                <div class="box-title subtitle2">雲端資安</div>
+                <div class="box-article body2">
+                  AWS依照資安五大面向，IAM、偵測、基礎設備保護、資料保護和事件回應及合規，分別提供不同的服務為客戶環境進行全面性的防護。
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex flex-row">
+            <div class="col-sm-6 col-md-6"></div>
+            <div class="col-sm-6 col-md-3">
+              <div class="box-2x2">
+                <div class="box-icon-bg">
+                  <div class="box-icon">
+                    <img src="./img/box-2x2-3.png" alt="" />
+                  </div>
+                </div>
+                <div class="box-title subtitle2">容器及無伺服器</div>
+                <div class="box-article body2">
+                  AWS
+                  提供了容器最佳化的基礎架構資源，以及全可用於建立和執行無伺服器應用程式的全受管服務，讓您能專注於產品創新並加速產品上市時間。
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-3">
+              <div class="box-2x2">
+                <div class="box-icon-bg">
+                  <div class="box-icon">
+                    <img src="./img/box-2x2-4.png" alt="" />
+                  </div>
+                </div>
+                <div class="box-title subtitle2">影音串流</div>
+                <div class="box-article body2">
+                  為助企業媒體進軍界，AWS
+                  提供完善且全面的媒體服務。能幫助顧客快速傳輸、準備、處理及提供廣播和Over-the-Top
+                  (OTT)影片
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="section-service-2">
+      <div class="container-fluid">
+        <div class="row service-area-title">
+          <div class="subtitle col">數位資訊服務內容</div>
+        </div>
+      </div>
+      <div class="container-flud">
+        <div class="row service-area-slogan">
+          <div class="body1 col">
+            雲端運算、加速到安全防護，皆以高規格提供您全方位資訊整合
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="section-items-frame">
+            <img src="./img/section-items.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end of section-service-1, section-service-2 -->
+
+    <!-- section-map -->
+    <section id="section-map">
+      <div class="container-fluid map-bg my-4">
+        <div class="row">
+          <div class="heading2 col-12">全球服務區域</div>
+          <div class="body1 col-12">
+            我們的客戶範圍從中小型企業到跨國公司，而且部署規模也各不相同。<br />憑藉我們經驗豐富的團隊，我們可以幫助您找到適合您的業務需求的最佳解決方案！
+          </div>
+        </div>
+        <div class="row mt-5 justify-content-center">
+          <div class="col-8 map-frame">
+            <img src="./img/m2r_map.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end of section-map -->
+
+    <!-- section-cooperation -->
+    <section id="section-cooperation">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="box-4x1 col-md-3 col-sm-4">
+            <h1 class="susbtitle">CDN主機<br />可訂製</h1>
+            <p class="heading1">$0</p>
+            <p class="body1">當日開通 針對企業或內容網站客制化主機規格</p>
+            <a href="#" class="btn">立即體驗</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end of section-cooperation -->
+
+    <!-- section-contact -->
+    <section id="section-contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-box">
+            <div class="subtitle">
+              聯絡我們<br />
+              Contact us
+            </div>
+            <div class="body1">
+              顧客滿意至上<br />無論是企業內的應用程序實施還是雲計算服務，<br />
+              我們的團隊將確保提供客戶無縫，無憂的體驗。
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end of section-contact -->
+
+    <footer>
+      <div class="container-fluid">
+        <div class="container">
+          <div class="row d-flex justify-content-center">
+            <div class="social-icon">
+              <img src="./img/twitter.svg" alt="" />
+            </div>
+            <div class="social-icon">
+              <img src="./img/youtube.svg" alt="" />
+            </div>
+            <div class="social-icon">
+              <img src="./img/facebook.svg" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="row my-3">
+          <div class="col-sm-12 col-md-3">
+            <div class="footer-widget">
+              <div class="widget-about">
+                <img src="./img/logo-2.png" alt="" />
+                <ul>
+                  <li>
+                    call us
+                    <a href="tel:0207408864"
+                      >02-07 55 Ubi Ave 3 Singapore 408864</a
+                    >
+                  </li>
+                  <li>phone</li>
+                  <li>email</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4 col-md-3">
+            <div class="footer-widget">
+              <div class="footer-menu footer-menu-1">
+                <div class="footer-widget-title">ACCOUNT</div>
+                <ul>
+                  <li><a href="">member</a></li>
+                  <li><a href="">cart</a></li>
+                  <li><a href="">order</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4 col-md-3">
+            <div class="footer-widget">
+              <div class="footer-menu footer-menu-1">
+                <div class="footer-widget-title">OUR COMPANY</div>
+                <ul>
+                  <li><a href="">shop</a></li>
+                  <li><a href="">our story</a></li>
+                  <li><a href="">our promise</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4 col-md-3">
+            <div class="footer-widget">
+              <div class="footer-menu footer-menu-1">
+                <div class="footer-widget-title">RESOURCES</div>
+                <ul>
+                  <li><a href="">FAQ</a></li>
+                  <li><a href="">contact us</a></li>
+                  <li><a href="">policy</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="container">
+          <div class="copyright-text text-center">
+            <p>
+              Copyright © 2021
+              <a href="#">M2R System Technology Pte Ltd.</a> All rights
+              reserved.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <script
       src=" https://code.jquery.com/jquery-3.3.1.slim.min.js"

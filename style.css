@@ -575,6 +575,10 @@ ul {
 /* end of section-map --------------------------------------*/
 
 /* section-cooperation */
+.box-dollar {
+  text-align: end;
+}
+
 #section-cooperation .box-4x1 {
   background: linear-gradient(
     rgba(225, 255, 248, 0.43),
@@ -583,7 +587,7 @@ ul {
   );
   border-radius: 5px;
   padding: 2rem;
-  margin: 1rem auto;
+  margin: 0 auto;
 
   position: relative;
   max-width: 18rem;

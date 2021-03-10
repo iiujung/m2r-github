@@ -24,7 +24,7 @@
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,400&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="assets/css/vendor/font-awesome.min.css" />
+
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -75,6 +75,26 @@
                   <div class="body1 nav-text">聯絡我們</div>
                   <div class="body2 nav-text">contact</div>
                 </a>
+              </li>
+              <li class="nav-item mr-2">
+                <div class="dropdown">
+                  <a
+                    class="btn btn-secondary dropdown-toggle body2"
+                    href="#"
+                    role="button"
+                    id="dropdownMenuLink"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    會員權益
+                  </a>
+
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <a class="dropdown-item" href="./fq.html">FAQ</a>
+                    <a class="dropdown-item" href="./policy.html">policy</a>
+                  </div>
+                </div>
               </li>
             </ul>
           </div>
@@ -286,7 +306,7 @@
     <section id="section-service-2">
       <div class="container-fluid">
         <div class="row service-area-title">
-          <div class="subtitle col">數位資訊服務內容</div>
+          <h2 class="subtitle col">數位資訊服務內容</h2>
         </div>
       </div>
       <div class="container-flud">
@@ -331,8 +351,46 @@
           <div class="box-4x1 col-md-3 col-sm-4">
             <h1 class="susbtitle">CDN主機<br />可訂製</h1>
             <p class="heading1">$0</p>
+            <p class="caption">/usd</p>
+
             <p class="body1">當日開通 針對企業或內容網站客制化主機規格</p>
-            <a href="#" class="btn">立即體驗</a>
+            <a href="#" class="btn btn-fill coop-btn">立即體驗</a>
+          </div>
+
+          <div class="box-4x1 col-md-3 col-sm-4">
+            <h1 class="susbtitle">CDN主機<br />可訂製</h1>
+            <p class="heading1">$0</p>
+            <p class="caption">/usd</p>
+
+            <p class="body1">當日開通 針對企業或內容網站客制化主機規格</p>
+            <a href="#" class="btn btn-fill coop-btn">立即體驗</a>
+          </div>
+
+          <div class="box-4x1 col-md-3 col-sm-4">
+            <h1 class="susbtitle">CDN主機<br />可訂製</h1>
+            <p class="heading1">$0</p>
+            <p class="caption">/usd</p>
+
+            <p class="body1">當日開通 針對企業或內容網站客制化主機規格</p>
+            <a href="#" class="btn btn-fill coop-btn">立即體驗</a>
+          </div>
+
+          <div class="box-4x1 col-md-3 col-sm-4">
+            <h1 class="susbtitle">CDN主機<br />可訂製</h1>
+            <p class="heading1">$0</p>
+            <p class="caption">/usd</p>
+
+            <p class="body1">當日開通 針對企業或內容網站客制化主機規格</p>
+            <a href="#" class="btn btn-fill coop-btn">立即體驗</a>
+          </div>
+
+          <div class="box-4x1 col-md-3 col-sm-4">
+            <h1 class="susbtitle">CDN主機<br />可訂製</h1>
+            <p class="heading1">$0</p>
+            <p class="caption">/usd</p>
+
+            <p class="body1">當日開通 針對企業或內容網站客制化主機規格</p>
+            <a href="#" class="btn btn-fill coop-btn">立即體驗</a>
           </div>
         </div>
       </div>
@@ -342,15 +400,126 @@
     <!-- section-contact -->
     <section id="section-contact">
       <div class="container">
-        <div class="row">
-          <div class="contact-box">
-            <div class="subtitle">
-              聯絡我們<br />
-              Contact us
-            </div>
-            <div class="body1">
+        <div class="row d-flex justify-content-center align-items-center">
+          <div class="contact-box col-md-10">
+            <div class="subtitle">聯絡我們</div>
+            <div class="body1 text-center">
               顧客滿意至上<br />無論是企業內的應用程序實施還是雲計算服務，<br />
               我們的團隊將確保提供客戶無縫，無憂的體驗。
+            </div>
+            <!-- Button trigger modal -->
+            <button
+              type="button"
+              class="btn btn-primary btn-fill contact-btn"
+              data-toggle="modal"
+              data-target="#exampleModalCenter"
+            >
+              contact us
+            </button>
+
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="exampleModalCenter"
+              tabindex="-1"
+              role="dialog"
+              aria-labelledby="exampleModalCenterTitle"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalCenterTitle">
+                      客戶表單填寫
+                    </h5>
+                    <button
+                      type="button"
+                      class="close"
+                      data-dismiss="modal"
+                      aria-label="Close"
+                    >
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <form>
+                      <div class="form-row">
+                        <div class="form-group col-md-6">
+                          <label for="inputEmail4">電子信箱</label>
+                          <input
+                            type="email"
+                            class="form-control"
+                            id="inputEmail"
+                            placeholder="電子信箱"
+                          />
+                        </div>
+                        <div class="form-group col-md-6">
+                          <label for="inputPassword4">聯絡電話</label>
+                          <input
+                            type="password"
+                            class="form-control"
+                            id="inputnumber"
+                            placeholder="電話"
+                          />
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label for="inputAddress">姓名</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="name"
+                          placeholder="名字"
+                        />
+                      </div>
+
+                      <div class="form-row">
+                        <div class="form-group col-md-4">
+                          <label for="inputState">興趣商品</label>
+                          <select id="inputState" class="form-control">
+                            <option selected>請選擇</option>
+                            <option>高防私服器</option>
+                            <option>高防私服器</option>
+                            <option>aws</option>
+                          </select>
+                        </div>
+                        <div class="form-group col-md-6">
+                          <label for="inputCity">其他有興趣的服務</label>
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="inputCity"
+                          />
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <div class="form-check">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            id="gridCheck"
+                          />
+                          <label class="form-check-label" for="gridCheck">
+                            訂閱我們的信箱
+                          </label>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                    <button type="button" class="btn btn-primary">
+                      Save changes
+                    </button>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -362,18 +531,18 @@
       <div class="container-fluid">
         <div class="container">
           <div class="row d-flex justify-content-center">
-            <div class="social-icon">
+            <div class="social-icon mr-2">
               <img src="./img/twitter.svg" alt="" />
             </div>
-            <div class="social-icon">
+            <div class="social-icon mr-2">
               <img src="./img/youtube.svg" alt="" />
             </div>
-            <div class="social-icon">
+            <div class="social-icon mr-2">
               <img src="./img/facebook.svg" alt="" />
             </div>
           </div>
         </div>
-        <div class="row my-3">
+        <div class="row footer-info-widget my-3">
           <div class="col-sm-12 col-md-3">
             <div class="footer-widget">
               <div class="widget-about">
@@ -381,9 +550,7 @@
                 <ul>
                   <li>
                     call us
-                    <a href="tel:0207408864"
-                      >02-07 55 Ubi Ave 3 Singapore 408864</a
-                    >
+                    <a href=""></a>
                   </li>
                   <li>phone</li>
                   <li>email</li>
@@ -433,11 +600,11 @@
       <div class="footer-bottom">
         <div class="container">
           <div class="copyright-text text-center">
-            <p>
+            <!-- <p>
               Copyright © 2021
               <a href="#">M2R System Technology Pte Ltd.</a> All rights
               reserved.
-            </p>
+            </p> -->
           </div>
         </div>
       </div>
@@ -460,4 +627,4 @@
     ></script>
     <script></script>
   </body>
-</html>
+</h

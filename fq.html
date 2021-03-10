@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>m2r tech</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./img/icon_favicon.png"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+      integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+      crossorigin="anonymous"
+    />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      #section-faq {
+        width: 100%;
+        height: 110vh;
+        background-image: url("./img/about-bg.jpg");
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+      }
+      /* accordion styles */
+      .accordion .card-header {
+        cursor: pointer;
+      }
+      .accordion.heading-right .card-title {
+        position: absolute;
+        right: 50px;
+      }
+      .accordion.indicator-plus .card-header:after {
+        font-family: "FontAwesome";
+        content: "";
+        float: right;
+      }
+      .accordion.indicator-plus .card-header.collapsed:after {
+        content: "";
+      }
+      .accordion.indicator-plus-before.round-indicator .card-header:before {
+        font-family: "FontAwesome";
+        font-size: 14pt;
+        content: "";
+        margin-right: 10px;
+      }
+      .accordion.indicator-plus-before.round-indicator
+        .card-header.collapsed:before {
+        content: "";
+        color: #000;
+      }
+      .accordion.indicator-plus-before .card-header:before {
+        font-family: "FontAwesome";
+        content: "";
+        float: left;
+      }
+      .accordion.indicator-plus-before .card-header.collapsed:before {
+        content: "";
+      }
+      .accordion.indicator-chevron .card-header:after {
+        font-family: "FontAwesome";
+        content: "";
+        float: right;
+      }
+      .accordion.indicator-chevron .card-header.collapsed:after {
+        content: "";
+      }
+      .accordion.background-none [class^="card"] {
+        background: transparent;
+      }
+      .accordion.border-0 .card {
+        border: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav
+        class="navbar navbar-expand-lg navbar-light bg-light navbar-custom fixed-top"
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./index.html">
+            <div class="img-box"><img src="./img/logo-2.png" alt="" /></div>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse d-flex justify-content-end"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item mr-2">
+                <a class="nav-link" href="#section-about">
+                  <div class="body1 nav-text">關於我們</div>
+                  <div class="body2 nav-text">about us</div>
+                </a>
+              </li>
+              <li class="nav-item mr-2">
+                <a class="nav-link" href="#section-main-service">
+                  <div class="body1 nav-text">服務項目</div>
+                  <div class="body2 nav-text">services</div>
+                </a>
+              </li>
+              <li class="nav-item mr-2">
+                <a class="nav-link" href="#section-cooperation">
+                  <div class="body1 nav-text">合作洽詢</div>
+                  <div class="body2 nav-text">cooperation</div>
+                </a>
+              </li>
+              <li class="nav-item mr-2">
+                <a class="nav-link" href="#secion-contact">
+                  <div class="body1 nav-text">聯絡我們</div>
+                  <div class="body2 nav-text">contact</div>
+                </a>
+              </li>
+              <li class="nav-item mr-2">
+                <div class="dropdown">
+                  <a
+                    class="btn btn-secondary dropdown-toggle"
+                    href="#"
+                    role="button"
+                    id="dropdownMenuLink"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    會員權益
+                  </a>
+
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <a class="dropdown-item" href="./fq.html">FAQ</a>
+                    <a class="dropdown-item" href="./policy.html">policy</a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- section-faq -->
+    <section id="section-faq">
+      <div class="container">
+        <h3>Collapse with Indicators</h3>
+        <div
+          class="accordion indicator-plus-before round-indicator"
+          id="accordionH"
+          aria-multiselectable="true"
+        >
+          <div class="card m-b-0">
+            <div
+              class="card-header collapsed"
+              role="tab"
+              id="headingOneH"
+              href="#collapseOneH"
+              data-toggle="collapse"
+              data-parent="#accordionH"
+              aria-expanded="false"
+              aria-controls="collapseOneH"
+            >
+              <a class="card-title">技術提供了哪一些服務與支援?</a>
+            </div>
+            <div
+              class="collapse"
+              id="collapseOneH"
+              role="tabpanel"
+              aria-labelledby="headingOneH"
+            >
+              <div class="card-body">
+                例: 服務器轉移服務：是否支持，支持哪一些系統的轉移
+                備份內容:　是否提供客制化服務 例：非定期備份、長期自動備份
+                監控機制： 是否提供建立保壘監控且能同步提供客戶知悉服務器狀況或
+                根據客戶需要的需求而定
+              </div>
+            </div>
+            <div
+              class="card-header collapsed"
+              role="tab"
+              id="headingTwoH"
+              href="#collapseTwoH"
+              data-toggle="collapse"
+              data-parent="#accordionH"
+              aria-expanded="false"
+              aria-controls="collapseTwoH"
+            >
+              <a class="card-title"
+                >服務項目、開通時間、作業時長有哪些需要清楚列出 ?</a
+              >
+            </div>
+            <div
+              class="collapse"
+              id="collapseTwoH"
+              role="tabpanel"
+              aria-labelledby="headingTwoH"
+            >
+              <div class="card-body">
+                提供服務器有哪些渠道（平台）?
+                價格有哪些優勢或與私人服務器的差異在哪里?
+                多久能提供服務，每次開啟服務項目個別需要多久?
+                提供哪一些服務項目? 例:服務器的網頁建置內容支持協助編寫？ 若有協助建置網頁，需列出支持哪些系統哪一種編輯語言，
+                UI頁面的內容是否包含美工服務。
+              </div>
+            </div>
+            <div
+              class="card-header collapsed"
+              role="tab"
+              id="headingThreeH"
+              href="#collapseThreeH"
+              data-toggle="collapse"
+              data-parent="#accordionH"
+              aria-expanded="false"
+              aria-controls="collapseThreeH"
+            >
+              <a class="card-title">收費方式如何計算？</a>
+            </div>
+            <div
+              class="collapse"
+              id="collapseThreeH"
+              role="tabpanel"
+              aria-labelledby="headingThreeH"
+            >
+              <div class="card-body">
+                一般透過美金計價，具體使用哪個網站換算匯率
+                讓客戶清楚的知悉會損失多少的會差
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end of section-about -->
+
+    <script
+      src=" https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+      integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+      integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(".closeall").click(function (e) {
+        e.preventDefault();
+        $(".accordion .collapse.show").collapse("hide");
+        return false;
+      });
+      $(".openall").click(function (e) {
+        e.preventDefault();
+        $(".accordion .collapse").collapse("show");
+        return false;
+      });
+
+      if (window.location.hash) {
+        redirect(window.location.hash);
+      }
+
+      $('a[href^="#"]').on("click", function (e) {
+        e.preventDefault();
+        var a = document.createElement("a");
+        a.href = this.href;
+        redirect(a.hash);
+        return false;
+      });
+
+      function redirect(hash) {
+        // $( hash ).attr( 'aria-expanded', 'true' ).focus();
+        // $( hash + '+div.collapse' ).addClass( 'show' ).attr( 'aria-expanded', 'true' );
+        $(hash + "+div.collapse").collapse("show");
+
+        // using this because of static nav bar space
+        $("html, body").animate(
+          {
+            scrollTop: $(hash).offset().top - 60,
+          },
+          10,
+          function () {
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+          }
+        );
+      }
+
+      document.documentElement.setAttribute("lang", "en");
+      document.documentElement.removeAttribute("class");
+
+      axe.run(function (err, results) {
+        console.log(results.violations);
+      });
+    </script>
+  </body>
+</html>

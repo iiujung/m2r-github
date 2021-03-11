@@ -198,6 +198,19 @@ ul {
   transform: translate(-50%, -50%);
   width: 110px;
   height: 35px;
+  animation: kv-scroll-down 1.5s 0.8s infinite;
+}
+
+/* latter */
+@keyframes kv-scroll-down {
+  0% {
+    bottom: 5%;
+    opacity: 1;
+  }
+  100% {
+    bottom: 25%;
+    opacity: 0;
+  }
 }
 
 .kv-scroll img {
@@ -285,6 +298,7 @@ ul {
   color: #fff;
   text-shadow: 0.1em 0.1em 0.2em rgba(51, 51, 51, 0.5);
 }
+
 #section-about .info-box {
   padding: 2rem;
   background: rgba(255, 255, 255, 0.5);
@@ -296,7 +310,16 @@ ul {
   z-index: 1;
   background: inherit;
   overflow: hidden;
+  animation: float-up .5s ease-in .3s 1 normal both;
 }
+
+@keyframes float-up {
+  0%{
+    
+  }
+}
+
+
 
 #section-about .info-box::before {
   content: "";
@@ -322,10 +345,16 @@ ul {
   position: absolute;
   top: 5%;
   right: 15%;
+  z-index: 20;
 }
 
 .about-img img {
   height: 100%;
+}
+
+.about-img img:hover {
+  transform: scale(1.2);
+  transition-duration: 0.5s;
 }
 
 .white-box-l {

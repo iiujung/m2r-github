@@ -310,16 +310,7 @@ ul {
   z-index: 1;
   background: inherit;
   overflow: hidden;
-  animation: float-up .5s ease-in .3s 1 normal both;
 }
-
-@keyframes float-up {
-  0%{
-    
-  }
-}
-
-
 
 #section-about .info-box::before {
   content: "";
@@ -385,6 +376,7 @@ ul {
 #section-main-service .mainservice1-3 {
   position: relative;
 }
+
 #section-main-service .info-box {
   margin-bottom: 50px;
   margin-top: 50px;
@@ -393,6 +385,41 @@ ul {
   border-radius: 5px;
   box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.247);
 }
+
+#section-main-service .mainservice1-3:hover {
+  animation: float-up 0.8s 0.5s ease-out both;
+}
+@keyframes float-up {
+  0% {
+    transform: translateY(10px);
+  }
+  50% {
+    transform: translateY(5px);
+  }
+  100% {
+    transform: translateY(10px);
+  }
+}
+
+.scale-up-top {
+  animation: scale-up-top 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+
+@keyframes scale-up-top {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+    -webkit-transform-origin: 50% 0%;
+    transform-origin: 50% 0%;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform-origin: 50% 0%;
+    transform-origin: 50% 0%;
+  }
+}
+
 #section-main-service .info-title {
   text-align: right;
   color: #33bcf2;

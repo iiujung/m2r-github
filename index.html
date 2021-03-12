@@ -169,7 +169,7 @@
       </div>
       <div class="container">
         <div class="row main-service">
-          <div class="col-sm-12 col-md-4 mainservice1-3">
+          <div class="col-sm-12 col-md-4 mainservice1-3 ">
             <div
               class="blue-square d-flex justify-content-center align-items-center"
             >
@@ -177,7 +177,7 @@
                 <img src="./img/mainservice-icon01.svg" alt="" />
               </div>
             </div>
-            <div class="info-box">
+            <div class="info-box ">
               <div class="info-title subtitle2 p-3 pb-3">MSP託管運維</div>
               <div class="info-body body2 p-3">
                 Managed Service Provider (MSP)
@@ -637,6 +637,21 @@
       integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
       crossorigin="anonymous"
     ></script>
-    <script></script>
+    <script>
+      $(window).on("scroll",function(){
+        console.log("scrollNow", $(this).scrollTop())
+        // let width =$(this).width()
+        let scrollNow = $(this).scrollTop();
+
+        // mainservice-card
+        if (scrollNow > 900) {
+                $('.mainservice1-3').addClass('scale-up-top')
+            }
+            else {
+                $('.mainservice1-3').removeClass('scale-up-top')
+            }
+
+      })
+    </script>
   </body>
 </h

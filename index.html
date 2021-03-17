@@ -24,14 +24,14 @@
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,400&display=swap"
       rel="stylesheet"
     />
-    <link href="fontawesome-free-5.15-1.2-web/css/all.css" rel="stylesheet">
+    <link href="fontawesome-free-5.15-1.2-web/css/all.css" rel="stylesheet" />
 
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
       <nav
-        class="navbar navbar-expand-lg navbar-light bg-light navbar-custom fixed-top"
+        class="navbar navbar-expand-md navbar-light bg-light navbar-custom fixed-top"
       >
         <div class="container-fluid">
           <a class="navbar-brand" href="#section-kv">
@@ -49,10 +49,10 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div
-            class="collapse navbar-collapse d-flex justify-content-end"
+            class="collapse navbar-collapse"
             id="navbarNav"
           >
-            <ul class="navbar-nav">
+            <ul class="navbar-nav ml-auto">
               <li class="nav-item mr-2">
                 <a class="nav-link" href="#section-about">
                   <div class="body1 nav-text">關於我們</div>
@@ -119,12 +119,27 @@
           <a class="btn-fill" href="#section-cooperation">立即訂購</a>
           <a class="btn-outline" href="#section-contact">聯絡我們</a>
         </div>
-      
+
         <div class="kv-scroll">
-          <svg width="110" height="73" viewBox="0 0 110 73" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M1.21751 2.13228L54.6585 21.1429L54.9922 21.2616L55.326 21.1429L108.767 2.13228V14.0741L54.9922 35.4989L1.21751 14.0741V2.13228Z" fill="white" stroke="white" stroke-width="1.99166"/>
-            <path d="M0.995828 38.4112L54.4368 57.4218L54.7706 57.5406L55.1043 57.4218L108.545 38.4112V50.353L54.7706 71.7779L0.995828 50.353V38.4112Z" stroke="white" stroke-width="1.99166"/>
-            </svg>
+          <svg
+            width="110"
+            height="73"
+            viewBox="0 0 110 73"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M1.21751 2.13228L54.6585 21.1429L54.9922 21.2616L55.326 21.1429L108.767 2.13228V14.0741L54.9922 35.4989L1.21751 14.0741V2.13228Z"
+              fill="white"
+              stroke="white"
+              stroke-width="1.99166"
+            />
+            <path
+              d="M0.995828 38.4112L54.4368 57.4218L54.7706 57.5406L55.1043 57.4218L108.545 38.4112V50.353L54.7706 71.7779L0.995828 50.353V38.4112Z"
+              stroke="white"
+              stroke-width="1.99166"
+            />
+          </svg>
         </div>
       </div>
     </section>
@@ -145,7 +160,7 @@
               以顧客為念，服務範圍跨越全球，我們不斷的提升服務品質及擴大服務範圍與業務。解決挑戰並增強業務能力憑藉我們敬業而又幹練的專業團隊，我們提供最佳實踐和領先的產品，幫助您解決挑戰並創造價值。
             </div>
           </div>
-          <div class="img-block ">
+          <div class="img-block">
             <div class="white-box-l"></div>
             <div class="white-box-r"></div>
             <div class="about-img">
@@ -169,7 +184,7 @@
       </div>
       <div class="container">
         <div class="row main-service">
-          <div class="col-sm-12 col-md-4 mainservice1-3 ">
+          <div class="col-sm-12 col-md-4 mainservice1-3">
             <div
               class="blue-square d-flex justify-content-center align-items-center"
             >
@@ -177,7 +192,7 @@
                 <img src="./img/mainservice-icon01.svg" alt="" />
               </div>
             </div>
-            <div class="info-box ">
+            <div class="info-box">
               <div class="info-title subtitle2 p-3 pb-3">MSP託管運維</div>
               <div class="info-body body2 p-3">
                 Managed Service Provider (MSP)
@@ -411,7 +426,6 @@
     <!-- section-contact -->
     <section id="section-contact">
       <div class="container">
-        
         <div class="row d-flex justify-content-center align-items-center">
           <div class="contact-box col-md-10">
             <div class="subtitle">聯絡我們</div>
@@ -638,20 +652,18 @@
       crossorigin="anonymous"
     ></script>
     <script>
-      $(window).on("scroll",function(){
-        console.log("scrollNow", $(this).scrollTop())
+      $(window).on("scroll", function () {
+        console.log("scrollNow", $(this).scrollTop());
         // let width =$(this).width()
         let scrollNow = $(this).scrollTop();
 
         // mainservice-card
         if (scrollNow > 900) {
-                $('.mainservice1-3').addClass('scale-up-top')
-            }
-            else {
-                $('.mainservice1-3').removeClass('scale-up-top')
-            }
-
-      })
+          $(".mainservice1-3").addClass("scale-up-top");
+        } else {
+          $(".mainservice1-3").removeClass("scale-up-top");
+        }
+      });
     </script>
   </body>
-</h
+</html>

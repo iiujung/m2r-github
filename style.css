@@ -371,6 +371,11 @@ ul {
     margin-top: 2rem;
   }
 
+  #section-about .info-box {
+    height: 40rem;
+    width: 20rem;
+  }
+
 }
 /* end of section-kv------------------------------------------------------ */
 

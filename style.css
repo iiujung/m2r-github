@@ -737,16 +737,15 @@ a:hover {
   transition: 0.2s;
 }
 
-
 @media (max-width: 767.98px) {
   .heading1 {
     font-style: normal;
     font-weight: bold;
-    font-size: 2.5rem;
-    line-height: 3.5rem;
+    font-size: 2.25rem;
+    line-height: 3rem;
     letter-spacing: 0.03em;
   }
-  
+
   .heading2 {
     font-style: normal;
     font-weight: bold;
@@ -754,7 +753,7 @@ a:hover {
     line-height: 2rem;
     letter-spacing: 0.025em;
   }
-  
+
   .subtitle {
     font-style: normal;
     font-weight: 600;
@@ -762,7 +761,7 @@ a:hover {
     line-height: 2rem;
     letter-spacing: 0.03em;
   }
-  
+
   .subtitle2 {
     font-style: normal;
     font-weight: 400;
@@ -770,15 +769,15 @@ a:hover {
     line-height: 2rem;
     letter-spacing: 0.055em;
   }
-  
+
   .caption {
     font-style: normal;
     font-weight: normal;
     font-size: 0.4rem;
-    line-height: .5rem;
+    line-height: 0.5rem;
     letter-spacing: 0.07em;
   }
-  
+
   .body1 {
     font-style: normal;
     font-weight: normal;
@@ -786,7 +785,7 @@ a:hover {
     line-height: 1.5rem;
     letter-spacing: 0.08em;
   }
-  
+
   .body2 {
     font-style: normal;
     font-weight: normal;
@@ -794,49 +793,55 @@ a:hover {
     line-height: 1.8rem;
     letter-spacing: 0.07em;
   }
-  
+
   .button {
     font-style: normal;
     font-weight: bold;
     font-size: 1.25rem;
-    line-height: .3rem;
+    line-height: 0.3rem;
     letter-spacing: 0.16em;
   }
-  a.navbar-brand .img-box{
+  a.navbar-brand .img-box {
     width: 8rem;
     height: 4rem;
+  }
+
+  .service-1-bg {
+    height: 180vh;
   }
 
   .kv-info {
     padding-top: 3rem;
   }
 
-  .img-block .about-img{
+  .img-block .about-img {
     width: 8rem;
     height: 9rem;
+    top: 1%;
+    right: 10%;
     border-radius: 2rem 0;
   }
 
-  .img-block .white-box-l{
-    top: 20%;
-    right: 45%;
+  .img-block .white-box-l {
+    top: 12%;
+    right: 40%;
     border-radius: 0 0 0 60px;
     width: 60px;
     height: 70px;
   }
-  .img-block .white-box-r{
-    top: 2%;
-    right: 5%;
+  .img-block .white-box-r {
+    top: -2%;
+    right: 1%;
     border-radius: 0 60px 0 0;
     width: 60px;
     height: 70px;
   }
 
-  .about-bg .subtitle{
+  .about-bg .subtitle {
     margin-top: 2rem;
   }
 
-  #section-about .info-box{
+  #section-about .info-box {
     height: 40rem;
     width: 20rem;
   }
@@ -850,6 +855,26 @@ a:hover {
     height: 60px;
     position: absolute;
     top: -3%;
-}
+  }
+  .main-service-bg::after {
+    bottom: -4%;
+  }
+  #section-service-1 .highlight {
+    width: 9rem;
+    height: 1rem;
+    background-color: #48ffd3;
+    transform: skewX(-30deg);
+    position: absolute;
+    top: 14%;
+    left: 9%;
+  }
 
+  #section-service-1 .service-heading {
+    /* margin-bottom: 6rem; */
+  }
+  .d-m-none {
+    display: none;
+  }
+  #section-service-1 .box-2x2 {
+    min-height: 30rem;
 }
